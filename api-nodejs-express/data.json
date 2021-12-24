@@ -1,18 +1,20 @@
-[
-    {
-        "lang":"JavaScript",
-        "ext":".js"
-    },
-    {
-        "lang":"Python",
-        "ext":".py"
-    },
-    {
-        "lang":"C#",
-        "ext":".cs"
-    },
-    {
-        "lang":"Kotlin",
-        "ext":".kt"
-    }    
-]
+{
+    "reservedSessions": [
+        {
+            "duration": 60,
+            "dateTime": "2021-12-25T11:00:00.000+01:00"
+        },
+        {
+            "duration": 60,
+            "dateTime": "2021-12-25T09:00:00.000+01:00"
+        },
+        {
+            "duration": 60,
+            "dateTime": "2021-12-26T09:00:00.000+01:00"
+        }
+    ],
+    "unavailableDays": [
+        "23/12/2021",
+        "24/12/2021"
+    ]
+}
