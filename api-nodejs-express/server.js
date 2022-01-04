@@ -11,7 +11,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/api', throttle({ "rate": "10/m" }), (req, res) => {
+app.get('/api', throttle({ "rate": "2/s" }), (req, res) => {
   const fs = require('fs');
   try {
     const data = fs.readFileSync('data.json', 'utf8');
