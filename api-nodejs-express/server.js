@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const throttle = require('express-throttle');
+port = process.env.PORT || 3000;
 
 app.use(cors());
 
@@ -21,4 +22,4 @@ app.get('/api', throttle({ "rate": "2/s" }), (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log('API escoltant al port 3000'));
+app.listen(port, () => console.log('API escoltant al port:', port));
