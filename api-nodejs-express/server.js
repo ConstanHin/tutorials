@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const throttle = require('express-throttle');
-port = process.env.PORT || 3000;
+port = process.env.PORT || 3001;
 
 app.use(cors());
 
